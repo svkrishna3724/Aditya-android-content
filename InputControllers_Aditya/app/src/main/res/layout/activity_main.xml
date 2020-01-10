@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <ImageButton
+       android:layout_width="100dp"
+       android:layout_height="200dp"
+       android:layout_gravity="center"
+       android:layout_margin="0dp"
+       android:onClick="submit"
+       android:src="@drawable/img2"
+       />
+   <ToggleButton
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/tg1" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="RadioButtons"
+       android:gravity="center"
+       android:textSize="24sp"
+       android:textStyle="bold"/>
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/rg1">
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/rb1"
+          android:checked="true"
+          android:text="Male"/>
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/rb2"
+          android:text="Female"/>
+   </RadioGroup>
+   <ProgressBar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/prog1"
+       style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="click"
+       android:onClick="prog"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text=" "
+       android:id="@+id/text1"
+       android:textSize="24dp"/>
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/spinner1"/>
+
+
+
+</LinearLayout>
+</ScrollView>
